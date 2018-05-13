@@ -2,8 +2,7 @@ package qdu.petcare.service.impl;
 
 import java.util.List;
 
-import javax.annotation.Resource;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import qdu.petcare.dao.OrderMapper;
@@ -13,12 +12,10 @@ import qdu.petcare.pojo.Product;
 import qdu.petcare.service.IOrderService;
 import qdu.petcare.vo.PageBean;
 
-@Service("orderService")
+@Service
 public class OrderServiceImpl implements IOrderService{
-	@Resource(name="orderMapper")
+	@Autowired
 	private OrderMapper orderMapper;
-	
-
 
 	@Override
 	public List<Order> findOrder(Integer user_id) {

@@ -16,7 +16,7 @@ import org.springframework.web.multipart.MultipartFile;
 import qdu.petcare.constant.MallConstant;
 import qdu.petcare.util.JsonUtils;
 
-@Controller
+/*@Controller*/
 @RequestMapping("/upload")
 public class UploadController {
 	/**

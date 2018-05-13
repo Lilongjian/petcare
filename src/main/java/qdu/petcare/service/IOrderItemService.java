@@ -7,8 +7,6 @@ import qdu.petcare.pojo.OrderItem;
 
 public interface IOrderItemService {
 
-	
-
 	boolean add(Order order);
 
 	int addOrderItem(OrderItem orderItem);

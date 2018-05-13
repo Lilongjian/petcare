@@ -1,17 +1,11 @@
 package qdu.petcare.service.impl;
-
-
-
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import qdu.petcare.dao.OrderItemMapper;
 import qdu.petcare.pojo.Order;
 import qdu.petcare.pojo.OrderItem;
 import qdu.petcare.service.IOrderItemService;
-
 
 @Service
 public class OrderItemServiceImpl implements IOrderItemService {

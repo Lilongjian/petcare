@@ -14,14 +14,14 @@ http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 	<!-- 配置Controller扫描 -->
     <context:component-scan base-package="qdu.petcare.controller" />
     <!-- 配置注解驱动 -->
-    <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean"> 
+   <!-- <bean id="conversionService" class="org.springframework.format.support.FormattingConversionServiceFactoryBean"> 
  	  <property name="converters"> 
  	   <list> 
  	    <bean class="qdu.petcare.util.DateConverter" /> 
  	   </list> 
  	  </property> 
- 	</bean>
- 	<mvc:annotation-driven conversion-service="conversionService" />
+ 	</bean> -->
+ 	<mvc:annotation-driven/> 
     
     
     <!-- jsp配置视图解析器 -->

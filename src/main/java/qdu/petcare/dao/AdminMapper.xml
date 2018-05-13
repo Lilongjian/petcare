@@ -3,7 +3,7 @@
 
 <mapper namespace="qdu.petcare.dao.AdminMapper">
 
-	<select id="getAdmin" resultType="Admin" parameterType="Admin">
+	<select id="getAdmin" resultType="qdu.petcare.pojo.Admin" parameterType="Admin">
 		select id,adminname,password from admin where adminname=#{adminname} and
 		password=#{password};
 	</select>

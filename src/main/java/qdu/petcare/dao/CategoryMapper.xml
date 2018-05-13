@@ -3,7 +3,7 @@
 
 <mapper namespace="qdu.petcare.dao.CategoryMapper">
 
-	<resultMap type="Category" id="categoryInfoMap">
+	<resultMap type="qdu.petcare.pojo.Category" id="categoryInfoMap">
 		<id property="id" column="id" />
 		<id property="parent_id" column="parent_id" />
 		<result property="name" column="name" />

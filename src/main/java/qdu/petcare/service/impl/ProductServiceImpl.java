@@ -1,10 +1,6 @@
 package qdu.petcare.service.impl;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
-import javax.annotation.Resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,13 +12,13 @@ import qdu.petcare.service.IProductService;
 import qdu.petcare.vo.PageBean;
 import qdu.petcare.vo.SearchCondition;
 
-@Service("productService")
+@Service
 public class ProductServiceImpl implements IProductService{
 	@Autowired
 	private ProductMapper productMapper;
 	
-	@Resource(name="staticPageService")
-	private IStaticPageService staticPageService;
+	/*@Resource(name="staticPageService")
+	private IStaticPageService staticPageService;*/
 	@Override
 	public List<Product> findAll() {
 		return productMapper.findAll();

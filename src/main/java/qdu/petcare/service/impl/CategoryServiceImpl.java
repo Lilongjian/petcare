@@ -14,7 +14,7 @@ import qdu.petcare.service.ICategoryService;
 import qdu.petcare.vo.PageBean;
 import qdu.petcare.vo.SearchCondition;
 
-@Service("categoryService")
+@Service
 public class CategoryServiceImpl implements ICategoryService {
 	@Autowired
 	private CategoryMapper categoryMapper;
