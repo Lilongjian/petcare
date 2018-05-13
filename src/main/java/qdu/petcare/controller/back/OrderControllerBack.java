@@ -15,7 +15,7 @@ import qdu.petcare.service.IOrderItemService;
 import qdu.petcare.service.IOrderService;
 import qdu.petcare.vo.PageBean;
 
-@Controller
+/*@Controller*/
 @RequestMapping("/orderBack")
 public class OrderControllerBack {
 	

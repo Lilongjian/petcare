@@ -8,6 +8,7 @@
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
+     <welcome-file>index.action</welcome-file>
   </welcome-file-list>
   
   <!-- 配置监听器加载spring -->
@@ -53,18 +54,18 @@
     </servlet-mapping>
  
   	<!-- 配置SpringMVC 前台 -->
-    <servlet>
+    <!-- <servlet>
         <servlet-name>springmvc-front</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
        <init-param>
            <param-name>contextConfigLocation</param-name>
            <param-value>classpath:spring/springmvc-front.xml</param-value>
        </init-param>
-       <!-- 启动tomcat时候启动 -->
+       启动tomcat时候启动
        <load-on-startup>1</load-on-startup>
-    </servlet>
-    <servlet-mapping>
+    </servlet> -->
+    <!-- <servlet-mapping>
         <servlet-name>springmvc</servlet-name>
        <url-pattern>*.html</url-pattern>
-    </servlet-mapping>
+    </servlet-mapping> -->
 </web-app>

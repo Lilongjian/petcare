@@ -9,15 +9,15 @@ public class Order implements Serializable{
 	
 	private Integer id;
 
-	private BigDecimal order_no;
+	private BigDecimal orderNo;
 
-	private Integer user_id;
+	private Integer userId;
 
-	private Integer shipping_id;
+	private Integer shippingId;
 
 	private BigDecimal payment;
 
-	private Integer payment_type;
+	private Integer paymentType;
 
 	private Integer postage;
 
@@ -31,56 +31,11 @@ public class Order implements Serializable{
 
 	private Date close_time;
 
-	private Date create_time;
+	private Date createTime;
 
 	private Date update_time;
 	
 	private	List<OrderItem> list;
-
-	public Order() {
-		super();
-	}
-
-	public Order(BigDecimal order_no, Integer user_id, Integer shipping_id, BigDecimal payment, Integer payment_type,
-			Integer postage, Integer status, Date payment_time, Date send_time, Date end_time, Date close_time,
-			Date create_time, Date update_time, List<OrderItem> list) {
-		super();
-		this.order_no = order_no;
-		this.user_id = user_id;
-		this.shipping_id = shipping_id;
-		this.payment = payment;
-		this.payment_type = payment_type;
-		this.postage = postage;
-		this.status = status;
-		this.payment_time = payment_time;
-		this.send_time = send_time;
-		this.end_time = end_time;
-		this.close_time = close_time;
-		this.create_time = create_time;
-		this.update_time = update_time;
-		this.list = list;
-	}
-
-	public Order(Integer id, BigDecimal order_no, Integer user_id, Integer shipping_id, BigDecimal payment,
-			Integer payment_type, Integer postage, Integer status, Date payment_time, Date send_time, Date end_time,
-			Date close_time, Date create_time, Date update_time, List<OrderItem> list) {
-		super();
-		this.id = id;
-		this.order_no = order_no;
-		this.user_id = user_id;
-		this.shipping_id = shipping_id;
-		this.payment = payment;
-		this.payment_type = payment_type;
-		this.postage = postage;
-		this.status = status;
-		this.payment_time = payment_time;
-		this.send_time = send_time;
-		this.end_time = end_time;
-		this.close_time = close_time;
-		this.create_time = create_time;
-		this.update_time = update_time;
-		this.list = list;
-	}
 
 	public Integer getId() {
 		return id;
@@ -90,28 +45,28 @@ public class Order implements Serializable{
 		this.id = id;
 	}
 
-	public BigDecimal getOrder_no() {
-		return order_no;
+	public BigDecimal getOrderNo() {
+		return orderNo;
 	}
 
-	public void setOrder_no(BigDecimal order_no) {
-		this.order_no = order_no;
+	public void setOrderNo(BigDecimal orderNo) {
+		this.orderNo = orderNo;
 	}
 
-	public Integer getUser_id() {
-		return user_id;
+	public Integer getUserId() {
+		return userId;
 	}
 
-	public void setUser_id(Integer user_id) {
-		this.user_id = user_id;
+	public void setUserId(Integer userId) {
+		this.userId = userId;
 	}
 
-	public Integer getShipping_id() {
-		return shipping_id;
+	public Integer getShippingId() {
+		return shippingId;
 	}
 
-	public void setShipping_id(Integer shipping_id) {
-		this.shipping_id = shipping_id;
+	public void setShippingId(Integer shippingId) {
+		this.shippingId = shippingId;
 	}
 
 	public BigDecimal getPayment() {
@@ -122,12 +77,12 @@ public class Order implements Serializable{
 		this.payment = payment;
 	}
 
-	public Integer getPayment_type() {
-		return payment_type;
+	public Integer getPaymentType() {
+		return paymentType;
 	}
 
-	public void setPayment_type(Integer payment_type) {
-		this.payment_type = payment_type;
+	public void setPaymentType(Integer paymentType) {
+		this.paymentType = paymentType;
 	}
 
 	public Integer getPostage() {
@@ -178,12 +133,12 @@ public class Order implements Serializable{
 		this.close_time = close_time;
 	}
 
-	public Date getCreate_time() {
-		return create_time;
+	public Date getCreateTime() {
+		return createTime;
 	}
 
-	public void setCreate_time(Date create_time) {
-		this.create_time = create_time;
+	public void setCreateTime(Date createTime) {
+		this.createTime = createTime;
 	}
 
 	public Date getUpdate_time() {
@@ -204,12 +159,14 @@ public class Order implements Serializable{
 
 	@Override
 	public String toString() {
-		return "Order [id=" + id + ", order_no=" + order_no + ", user_id=" + user_id + ", shipping_id=" + shipping_id
-				+ ", payment=" + payment + ", payment_type=" + payment_type + ", postage=" + postage + ", status="
+		return "Order [id=" + id + ", orderNo=" + orderNo + ", userId=" + userId + ", shippingId=" + shippingId
+				+ ", payment=" + payment + ", paymentType=" + paymentType + ", postage=" + postage + ", status="
 				+ status + ", payment_time=" + payment_time + ", send_time=" + send_time + ", end_time=" + end_time
-				+ ", close_time=" + close_time + ", create_time=" + create_time + ", update_time=" + update_time
+				+ ", close_time=" + close_time + ", createTime=" + createTime + ", update_time=" + update_time
 				+ ", list=" + list + "]";
 	}
+
+	
 	
 	
 	

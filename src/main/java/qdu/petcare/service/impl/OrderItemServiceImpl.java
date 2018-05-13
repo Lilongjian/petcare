@@ -7,7 +7,7 @@ import qdu.petcare.pojo.Order;
 import qdu.petcare.pojo.OrderItem;
 import qdu.petcare.service.IOrderItemService;
 
-@Service
+/*@Service*/
 public class OrderItemServiceImpl implements IOrderItemService {
 	@Autowired
 	private OrderItemMapper orderItemMapper;
