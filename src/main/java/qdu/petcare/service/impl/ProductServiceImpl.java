@@ -6,6 +6,7 @@ import java.util.Map;
 
 import javax.annotation.Resource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import qdu.petcare.dao.ProductMapper;
@@ -17,7 +18,7 @@ import qdu.petcare.vo.SearchCondition;
 
 @Service("productService")
 public class ProductServiceImpl implements IProductService{
-	@Resource(name="productDao")
+	@Autowired
 	private ProductMapper productMapper;
 	
 	@Resource(name="staticPageService")

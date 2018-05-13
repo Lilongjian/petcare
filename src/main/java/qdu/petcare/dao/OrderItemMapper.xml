@@ -3,7 +3,7 @@
 
 <mapper namespace="qdu.petcare.dao.OrderItemMapper">
 
-	<resultMap type="OrderItem" id="OrderItemMap">
+	<resultMap type="qdu.petcare.pojo.OrderItem" id="OrderItemMap">
 		<id property="id" column="id" />
 		<result property="userId" column="user_id" />
 		<result property="orderNo" column="order_no" />

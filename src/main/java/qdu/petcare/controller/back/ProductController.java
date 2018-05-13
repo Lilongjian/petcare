@@ -21,7 +21,7 @@ import qdu.petcare.vo.SearchCondition;
 @Controller
 @RequestMapping("/product")
 public class ProductController {
-	@Resource(name = "productService")
+	@Autowired
 	private IProductService productService;
 	@Autowired
 	private ICategoryService categoryService;

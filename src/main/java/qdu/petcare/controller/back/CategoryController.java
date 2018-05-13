@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.propertyeditors.CustomDateEditor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -24,7 +25,7 @@ import qdu.petcare.vo.SearchCondition;
 @Controller
 @RequestMapping("/category")
 public class CategoryController {
-	@Resource(name="categoryService")
+	@Autowired
 	private ICategoryService categoryService; 
 	
 	@InitBinder

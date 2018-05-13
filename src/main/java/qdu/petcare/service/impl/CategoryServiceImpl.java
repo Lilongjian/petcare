@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import qdu.petcare.dao.CategoryMapper;
@@ -15,7 +16,7 @@ import qdu.petcare.vo.SearchCondition;
 
 @Service("categoryService")
 public class CategoryServiceImpl implements ICategoryService {
-	@Resource(name = "categoryDao")
+	@Autowired
 	private CategoryMapper categoryMapper;
 
 	@Override

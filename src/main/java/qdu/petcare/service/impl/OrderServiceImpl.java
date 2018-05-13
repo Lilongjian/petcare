@@ -15,7 +15,7 @@ import qdu.petcare.vo.PageBean;
 
 @Service("orderService")
 public class OrderServiceImpl implements IOrderService{
-	@Resource(name="orderDao")
+	@Resource(name="orderMapper")
 	private OrderMapper orderMapper;
 	
 
