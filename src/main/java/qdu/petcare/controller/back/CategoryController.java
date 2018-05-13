@@ -60,7 +60,7 @@ public class CategoryController {
 		PageBean pageBean =  categoryService.getPageBean(pageIndex, pageSize);
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.addObject("pageBean",pageBean);
-		modelAndView.setViewName("category");
+		modelAndView.setViewName("category_list");
 		return modelAndView;
 	}
 	
